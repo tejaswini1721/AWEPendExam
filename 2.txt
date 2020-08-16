@@ -1,0 +1,38 @@
+function validate() {
+    var Username = document.querySelector("#uname").Value;
+    var Passoword = document.querySelector("#passwrd").Value;
+
+
+    if (Username.trim() == "") {
+        alert("Its blank please enter again!!!");
+        return false;
+
+    }
+
+    else if (Password.trim() == "") {
+        alert("Its blank please enter again!!!");
+        return false;
+    }
+    else {
+        return true;
+        Username = "";
+        Password = "";
+    }
+
+}
+
+function info() {
+
+    let user = document.querySelector("#id1");
+    let users = user.cloneNode(true);
+
+
+    const readusername = document.querySelector("#uname").Value;
+    users.children[1].innerHTML = readusername;
+
+    user.appendChild(users);
+
+
+
+}
+
